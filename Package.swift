@@ -40,10 +40,11 @@ let package = Package(
             sources: [
                 "lib"
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("."),
-                .headerSearchPath("lib")
+                .headerSearchPath("lib"),
+                .headerSearchPath("include")
             ]
         )
     ],
